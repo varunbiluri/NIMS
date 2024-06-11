@@ -1,0 +1,57 @@
+/* Set the width of the slider container */
+.slick-slider {
+    border-radius: 3px;
+    top: 0px;
+    width: 100%; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+/* Style for individual slides */
+.slick-slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style for dots (navigation) */
+.slick-dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Style for individual dots */
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+}
+
+/* Style for active dot */
+.slick-dots li button {
+    font-size: 10px;
+    color: white; /* Color of inactive dots */
+    opacity: 0.5; /* Opacity of inactive dots */
+}
+/* Media query for phones */
+@media (max-width: 768px) {
+    .slick-slider {
+        width:100%; /* Adjust width for phones */
+        
+    }
+    .slick-prev,
+    .slick-next {
+        display: none !important;
+    }
+}
+
+/* Media query for laptops */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .slick-slider {
+        width: 90%; /* Adjust width for laptops */
+    }
+    .slick-prev,
+    .slick-next {
+        display: none !important;
+    }
+}
